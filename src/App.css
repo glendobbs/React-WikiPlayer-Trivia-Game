@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500');
+
+body {
+  height: 100vh;
+  text-align: center;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  background-image: url('http://i.imgur.com/AbEBYaI.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+html, body {margin: 0; height: 100%; overflow: scroll}
+
+table {
+  margin: 50px auto 0 auto;
+  text-align: left;
+  width: 380px;
+  background: #1b2936;
+  font-size: 0.90em;
+  padding-bottom: 0;
+  /*border-radius: 4px;*/
+  -webkit-box-shadow: 0px 8px 55px 6px rgba(255,252,255,1);
+  -moz-box-shadow: 0px 8px 55px 6px rgba(255,252,255,1);
+  box-shadow: 0px 8px 55px 6px rgba(255,252,255,1);
+}
+
+td.years {
+  text-align: left;
+  padding-right: 5px;
+}
+
+tr.heading {
+  background: #0095fd;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border-radius: 3px;
+  padding: 0;
+}
+
+.left-col{
+  padding-left: 4px;
+}
+
+input {
+  width: 310px;
+  height: 20px;
+  font-size: 1em;
+  background: #F7F7F7;
+  border: 2px solid #1b2936;
+  border-radius: 6px;
+  outline: none;
+  padding-left: 5px;
+  margin-top: 6px;
+  margin-right: 3px;
+  vertical-align: top;
+}
+
+button.give-up {
+  height: 25px;
+  width: 60px;
+  padding: 0;
+  margin-top: 6px;
+  border-radius: 3px;
+  border: 0;
+  background: #f75353;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.7s ease-out;
+}
+
+button.give-up:hover {
+  background: white;
+  color: #f75353;
+}
+
+div.modal {
+  height: 500px;
+  width: 400px;
+  background: #1d1f21;
+  margin: 50px auto 0 auto;
+  border: 3px solid white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(247,244,247,1);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(247,244,247,1);
+  box-shadow: 0px 0px 15px 1px rgba(247,244,247,1);
+}
+
+
+img.modal-image {
+  width: 150px;
+  height: 150px;
+  margin: 40px auto 0 auto;
+}
+
+h1.game-title {
+  border-bottom: 5px solid #0095fd;
+  width: 75%;
+  margin: 20px auto;
+  padding-bottom: 10px;
+}
+
+h1.correct {
+  font-size: 3em;
+}
+
+h1.correct-player {
+  padding-bottom: 30px;
+}
+
+h2.current-score {
+  padding-bottom: 10px;
+}
+
+h5.game-desc {
+  font-weight: 300;
+  padding: 10px 20px 20px 10px;
+}
+
+button.submit{
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: 2px solid white;;
+  color: white;
+  background: #0095fd;
+  font-size: 1em;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.7s ease-out;
+  outline: none;
+}
+
+button.submit:hover {
+  background: white;
+  color: #0095fd;
+  border: 2px solid #0095fd;
+}
+
+
+@media screen and (max-width: 440px) {
+    body {
+      background-image: url('http://i.imgur.com/UiNNFQu.jpg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    table {
+        width: 90%;
+        margin-top: 50px;
+    }
+    input {
+      width: 72%;
+    }
+    button.give-up{
+      width: 15%;
+      height: 30px;
+    }
+    div.modal {
+      height: 80vh;
+      width: 90%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+  img.modal-image{
+    width: 125px;
+    height: 125px;
+  }
+
+  h1.game-title {
+    font-size: 1.8em;
+  }
+
+  h5.game-desc{
+    padding-bottom: 10px;
+  }
+}
+
+div#footer {
+  position: fixed;
+  font-size: 0.75em;
+  left: 0;
+  right: 0;
+}
